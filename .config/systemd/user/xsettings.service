@@ -1,0 +1,15 @@
+[Unit]
+Description=Set X server related settings
+After=xrunning.service
+Requires=xrunning.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c '{ xrandr --output VGA1 --auto --primary --mode 1920x1080 && xrandr --output LVDS1 --off; } || true'
+ExecStart=xset r rate 150 40
+ExecStart=setxkbmap -layout us,ru -option grp:win_space_toggle,ctrl:nocaps
+Restart=on-failure
+RestartSec=500ms
+
+[Install]
+WantedBy=default.target

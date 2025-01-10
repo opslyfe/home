@@ -1,0 +1,27 @@
+[init]
+	defaultBranch = main
+[user]
+	name = anton demchenko
+	email = highnation88@icloud.com
+[alias]
+	co = checkout
+	cb = checkout -b
+	ca = commit -a
+	ps = push origin
+	pl = pull origin
+	plu = pull --rebase upstream
+	st = status
+	br = branch
+[push]
+	default = simple
+	autoSetupRemote = true
+[pull]
+	rebase = true
+[rebase]
+	autosquash = true
+[merge]
+	conflictStyle = diff3
+[color]
+	ui = false
+[credential]
+	helper = store

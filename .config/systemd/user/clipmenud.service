@@ -1,0 +1,21 @@
+[Unit]
+Description=Clipmenu daemon
+After=xrunning.service
+Requires=xrunning.service
+
+[Service]
+ExecStart=/bin/sh -c clipmenud
+Restart=always
+RestartSec=500ms
+
+MemoryDenyWriteExecute=yes
+NoNewPrivileges=yes
+ProtectControlGroups=yes
+ProtectKernelTunables=yes
+RestrictAddressFamilies=
+RestrictRealtime=yes
+
+TimeoutStopSec=2
+
+[Install]
+WantedBy=default.target

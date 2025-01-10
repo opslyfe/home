@@ -1,0 +1,12 @@
+[Unit]
+Description=Dynamic window manager
+Requires=xsettings.service
+After=xsettings.service
+
+[Service]
+ExecStart=/bin/sh -c 'exec dwm'
+Restart=always
+RestartSec=500ms
+
+[Install]
+WantedBy=default.target
