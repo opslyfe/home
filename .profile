@@ -24,3 +24,4 @@ export LC_COLLATE=C
 export EDITOR=vis
 export PAGER='less -R'
 export MANWIDTH=80
+export TERMINAL=footclient

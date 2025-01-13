@@ -1,0 +1,7 @@
+profile {
+	output LVDS-1 disable
+	output VGA-1 {
+		mode 1920x1080
+		position 0,0
+	}
+}

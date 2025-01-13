@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<labwc_config>
+
+  <core>
+    <decoration>server</decoration>
+  </core>
+
+  <theme>
+    <name></name>
+    <cornerRadius>8</cornerRadius>
+    <font name="sans" size="10" />
+  </theme>
+
+  <desktops number="4" />
+
+  <focus>
+    <followMouse>yes</followMouse>
+    <followMouseRequiresMovement>yes</followMouseRequiresMovement>
+  </focus>
+
+  <keyboard>
+    <repeatRate>40</repeatRate>
+    <repeatDelay>150</repeatDelay>
+    <keybind key="A-c">
+    	<action name="Close" />
+    </keybind>
+    <keybind key="A-Tab">
+    	<action name="NextWindow" />
+    </keybind>
+    <keybind key="A-p">
+    	<action name="Execute" command="bemenu-run" />
+    </keybind>
+    <keybind key="A-Return">
+      <action name="Execute" command="footclient" />
+    </keybind>
+    <keybind key="A-1">
+    	<action name="GoToDesktop" to="1" />
+    </keybind>
+    <keybind key="A-2">
+    	<action name="GoToDesktop" to="2" />
+    </keybind>
+    <keybind key="A-3">
+    	<action name="GoToDesktop" to="3" />
+    </keybind>
+    <keybind key="A-4">
+    	<action name="GoToDesktop" to="4" />
+    </keybind>
+  </keyboard>
+
+  <mouse>
+    <default />
+    <!-- Show a custom menu on desktop right click -->
+    <context name="Root">
+      <mousebind button="Right" action="Press">
+        <action name="ShowMenu" menu="root-menu" />
+      </mousebind>
+    </context>
+  </mouse>
+
+</labwc_config>

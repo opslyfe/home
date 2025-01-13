@@ -11,7 +11,9 @@ umask 022
 
 alias e=${EDITOR}
 alias c=cd
-alias t=tmux
+alias z=zellij
+alias zrf='zellij run -f --'
+alias ls=eza
 alias systemctl='systemctl --user'
 alias journalctl='journalctl --user -r'
 

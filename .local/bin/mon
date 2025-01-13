@@ -1,0 +1,19 @@
+#!/bin/sh
+
+get_thermal() {
+	cut -c 1-2 /sys/class/thermal/thermal_zone0/temp
+}
+
+get_battery() {
+	cat /sys/class/power_supply/BAT0/capacity
+}
+
+get_load() {
+	uptime | sed 's/.*: //g;s/,//g'
+}
+
+get_date() {
+	date +'%u %d %m %y %H %M'
+}
+
+printf "%s" "$(get_thermal) $(get_battery) $(get_load) $(get_date)"

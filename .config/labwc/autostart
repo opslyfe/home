@@ -1,0 +1,22 @@
+swaybg -c '#113344' >/dev/null 2>&1 &
+
+# Configure output directives such as mode, position, scale and transform.
+# Use wlr-randr to get your output names
+# Example ~/.config/kanshi/config below:
+#   profile {
+#     output HDMI-A-1 position 1366,0
+#     output eDP-1 position 0,0
+#   }
+kanshi >/dev/null 2>&1 &
+
+mako >/dev/null 2>&1 &
+
+swayidle -w \
+	timeout 300 'swaylock -f -c 000000' \
+	timeout 600 'wlopm --off \*' \
+	resume 'wlopm --on \*' \
+	before-sleep 'swaylock -f -c 000000' >/dev/null 2>&1 &
+
+foot --server >/dev/null 2>&1 &
+
+wl-paste --watch cliphist store >/dev/null 2>&1 &
