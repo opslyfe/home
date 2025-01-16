@@ -1,15 +1,10 @@
-swaybg -c '#113344' >/dev/null 2>&1 &
+swaybg -m tile -i ~/tmp/di_gi_tile.png >/dev/null 2>&1 &
 
-# Configure output directives such as mode, position, scale and transform.
-# Use wlr-randr to get your output names
-# Example ~/.config/kanshi/config below:
-#   profile {
-#     output HDMI-A-1 position 1366,0
-#     output eDP-1 position 0,0
-#   }
 kanshi >/dev/null 2>&1 &
 
 mako >/dev/null 2>&1 &
+
+sfwbar >/dev/null 2>&1 &
 
 swayidle -w \
 	timeout 300 'swaylock -f -c 000000' \

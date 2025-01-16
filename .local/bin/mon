@@ -16,4 +16,4 @@ get_date() {
 	date +'%u %d %m %y %H %M'
 }
 
-printf "%s" "$(get_thermal) $(get_battery) $(get_load) $(get_date)"
+printf "%s\n" "$(get_thermal) $(get_battery) $(get_load) $(get_date)"

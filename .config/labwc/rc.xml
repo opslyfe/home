@@ -8,11 +8,11 @@
 
   <theme>
     <name></name>
-    <cornerRadius>8</cornerRadius>
+    <cornerRadius>0</cornerRadius>
     <font name="sans" size="10" />
   </theme>
 
-  <desktops number="4" />
+  <desktops number="5" />
 
   <focus>
     <followMouse>yes</followMouse>
@@ -29,7 +29,7 @@
     	<action name="NextWindow" />
     </keybind>
     <keybind key="A-p">
-    	<action name="Execute" command="bemenu-run" />
+    	<action name="Execute" command="wmenu-run" />
     </keybind>
     <keybind key="A-Return">
       <action name="Execute" command="footclient" />
@@ -46,11 +46,40 @@
     <keybind key="A-4">
     	<action name="GoToDesktop" to="4" />
     </keybind>
+    <keybind key="A-5">
+    	<action name="GoToDesktop" to="5" />
+    </keybind>
+    <keybind key="A-S-1">
+    	<action name="SendToDesktop" to="1" />
+    </keybind>
+    <keybind key="A-S-2">
+    	<action name="SendToDesktop" to="2" />
+    </keybind>
+    <keybind key="A-S-3">
+    	<action name="SendToDesktop" to="3" />
+    </keybind>
+    <keybind key="A-S-4">
+    	<action name="SendToDesktop" to="4" />
+    </keybind>
+    <keybind key="A-S-5">
+    	<action name="SendToDesktop" to="5" />
+    </keybind>
+    <keybind key="A-S-L">
+    	<action name="Execute" command="swaylock -f -c 000000" />
+    </keybind>
+    <keybind key="XF86AudioMute">
+    	<action name="Execute" command="pactl set-sink-mute @DEFAULT_SINK@ toggle" />
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+    	<action name="Execute" command="pactl set-sink-volume @DEFAULT_SINK@ -5%" />
+    </keybind>
+    <keybind key="XF86AudioRaiseVolume">
+    	<action name="Execute" command="pactl set-sink-volume @DEFAULT_SINK@ +5%" />
+    </keybind>
   </keyboard>
 
   <mouse>
     <default />
-    <!-- Show a custom menu on desktop right click -->
     <context name="Root">
       <mousebind button="Right" action="Press">
         <action name="ShowMenu" menu="root-menu" />
