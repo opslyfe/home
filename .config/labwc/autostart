@@ -7,10 +7,10 @@ mako >/dev/null 2>&1 &
 sfwbar >/dev/null 2>&1 &
 
 swayidle -w \
-	timeout 300 'swaylock -f -c 000000' \
+	timeout 300 'swaylock -f -t -i /home/user/tmp/di_gi_tile.png' \
 	timeout 600 'wlopm --off \*' \
 	resume 'wlopm --on \*' \
-	before-sleep 'swaylock -f -t -i ~/tmp/di_gi_tile.png' >/dev/null 2>&1 &
+	before-sleep 'swaylock -f -t -i /home/user/tmp/di_gi_tile.png' >/dev/null 2>&1 &
 
 foot --server >/dev/null 2>&1 &
 

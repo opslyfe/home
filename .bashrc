@@ -11,7 +11,7 @@ umask 022
 
 alias e=${EDITOR}
 alias c=cd
-alias z=zellij
+alias z='TERM=rxvt zellij'
 alias zrf='zellij run -f --'
 alias ls=eza
 alias systemctl='systemctl --user'
