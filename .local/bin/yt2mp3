@@ -1,2 +1,0 @@
-#!/bin/sh
-yt-dlp -x --proxy 127.0.0.1:1080 --audio-format mp3 -P ~/music $@
