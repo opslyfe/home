@@ -65,7 +65,7 @@
     	<action name="SendToDesktop" to="5" />
     </keybind>
     <keybind key="A-S-L">
-    	<action name="Execute" command="swaylock -f -t -i ~/tmp/di_gi_tile.png" />
+    	<action name="Execute" command="swaylock -f -c 000000" />
     </keybind>
     <keybind key="XF86AudioMute">
     	<action name="Execute" command="pactl set-sink-mute @DEFAULT_SINK@ toggle" />
