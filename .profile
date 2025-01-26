@@ -16,6 +16,9 @@ export GOPATH=$XDG_DATA_HOME/go
 export MANPATH=$HOME/.local/share/man:/usr/share/man
 export PATH=$HOME/.local/bin:$GOPATH/bin:/usr/bin
 export VAGRANT_DEFAULT_PROVIDER=libvirt
+export ANSIBLE_STDOUT_CALLBACK=yaml
+export ANSIBLE_COLLECTIONS_PATH=$HOME/proj
+export ANSIBLE_INVENTORY=hosts
 
 export TZ=Europe/Moscow
 export LANG=en_US.UTF-8
