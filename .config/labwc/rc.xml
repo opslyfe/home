@@ -22,7 +22,7 @@
   <keyboard>
     <repeatRate>40</repeatRate>
     <repeatDelay>150</repeatDelay>
-    <keybind key="A-c">
+    <keybind key="A-x">
     	<action name="Close" />
     </keybind>
     <keybind key="A-Tab">

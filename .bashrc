@@ -11,8 +11,6 @@ umask 022
 
 alias e=${EDITOR}
 alias c=cd
-alias z='TERM=rxvt zellij'
-alias zrf='zellij run -f --'
 alias ap=ansible-playbook
 alias apc='ansible-playbook --check --diff --step'
 alias ls=eza
